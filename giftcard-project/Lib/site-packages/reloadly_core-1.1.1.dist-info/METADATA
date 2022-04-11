@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: reloadly-core
+Version: 1.1.1
+Summary: The Core for all Reloadly Python libraries
+Home-page: https://github.com/Reloadly/reloadly-sdk-python
+Author: Reloadly Inc.
+Author-email: developers@reloadly.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+Requires-Dist: email-validator
+Requires-Dist: requests
+Requires-Dist: jwt
+Requires-Dist: opentelemetry-launcher
+Requires-Dist: certifi
+
+UNKNOWN
+
+

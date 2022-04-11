@@ -1,0 +1,3 @@
+[opentelemetry_traces_exporter]
+otlp_proto_grpc = opentelemetry.exporter.otlp.proto.grpc.trace_exporter:OTLPSpanExporter
+

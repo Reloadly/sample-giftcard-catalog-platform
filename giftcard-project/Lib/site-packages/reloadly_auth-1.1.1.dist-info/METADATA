@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: reloadly-auth
+Version: 1.1.1
+Summary: The Official Python library for authenticating Reloadly APIs
+Home-page: https://github.com/Reloadly/reloadly-sdk-python/tree/main/authentication
+Author: Reloadly Inc.
+Author-email: developers@reloadly.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+Requires-Dist: email-validator
+Requires-Dist: requests
+Requires-Dist: jwt
+Requires-Dist: opentelemetry-launcher
+Requires-Dist: certifi
+Requires-Dist: reloadly-core
+
+# Authentication API
+
+The implementation is based on the [Authentication API Docs](https://developers.reloadly.com/#authentication-api).
+
+## Usage
+
+Create an `AuthenticationAPI` instance by providing the Application credentials details (client id & secret) from
+the [dashboard](https://www.reloadly.com/developers/api-settings).
+
+```python
+from authentication.client.AuthenticationAPI import AuthenticationAPI
+from core.enums.Service import Service
+
+sample = AuthenticationAPI()
+a = sample.clientCredentials(clientId="*****", clientSecret="*****" service=Service.AIRTIME_SANDBOX).getAccessToken(Service.AIRTIME_SANDBOX)
+print (a)
+```
+
+
